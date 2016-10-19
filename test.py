@@ -20,7 +20,7 @@ def getHtml(url):
         if hasattr(e, "reason"):
             print u"豆瓣链接错误，错误原因", e.reason
             print url
-            return ""
+        return ""
 
 
 class MyHTMLParser(HTMLParser):

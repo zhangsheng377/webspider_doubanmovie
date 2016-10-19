@@ -20,7 +20,7 @@ def getHtml(url):
         if hasattr(e, "reason"):
             print u"豆瓣链接错误，错误原因", e.reason
             print url
-            return ""
+        return ""
 
 
 class MyHTMLParser(HTMLParser):
@@ -101,6 +101,7 @@ parser = MyHTMLParser()
 #for i in range(startid,9999999):
 for i in range(5045678, 5045679):
     # print i
+    i=6000001
     id = str(i)
 
     myurl = 'https://movie.douban.com/subject/' + id
