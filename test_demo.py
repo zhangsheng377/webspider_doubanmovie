@@ -101,7 +101,6 @@ parser = MyHTMLParser()
 #for i in range(startid,9999999):
 for i in range(5045678, 5045679):
     # print i
-    i=6000001
     id = str(i)
 
     myurl = 'https://movie.douban.com/subject/' + id
