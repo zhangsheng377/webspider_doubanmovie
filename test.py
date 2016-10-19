@@ -102,7 +102,7 @@ startid_file=open("startid.dat",'r')
 start_s=startid_file.read()
 startid=int(start_s)
 startid_file.close()
-for i in range(startid,9999999):
+for i in range(startid+1,9999999):
 #for i in range(5045678, 5045679):
     # print i
     id = str(i)
