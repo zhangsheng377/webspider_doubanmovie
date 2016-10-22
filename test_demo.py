@@ -98,8 +98,9 @@ class MyHTMLParser(HTMLParser):
 
 #file = open("output.dat", 'w')
 parser = MyHTMLParser()
-#for i in range(startid,9999999):
-for i in range(5045678, 5045679):
+#for i in range(startid+1,9999999):
+#for i in range(5045678, 5045679):
+for i in range(6000277, 9999999):
     # print i
     id = str(i)
 

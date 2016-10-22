@@ -107,9 +107,15 @@ for i in range(startid+1,9999999):
     # print i
     id = str(i)
 
+    #myurl = 'https://movie.douban.com/subject/5045678'
+    #html = getHtml(myurl)
+    #while len(html) < 40000:
+    #    time.sleep(600)
+    #print 5045678, "\t", len(html)
+
     myurl = 'https://movie.douban.com/subject/' + id
     html = getHtml(myurl)
-    print i, "\t", len(html)
+    #print i, "\t", len(html)
     if len(html) > 40000:
         parser._init_(id)
         parser.feed(html)
@@ -131,4 +137,3 @@ for i in range(startid+1,9999999):
     time.sleep(6)
 
 parser.close()
-file.close()
