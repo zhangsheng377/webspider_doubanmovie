@@ -79,6 +79,7 @@ class MyHTMLParser(HTMLParser):
             self.title = data.decode("utf-8").encode("gb18030")
             self.isTitleTag = False
         elif self.isYearTag == True:
+            #print filter(str(data).isdigit, data)
             self.year = int(data[1:5])
             self.isYearTag = False
         elif self.isBriefCommentTag == True:
